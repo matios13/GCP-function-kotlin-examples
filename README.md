@@ -1,7 +1,7 @@
 # GCP Kotlin function
 
 ## How to deploy:
-1. [install gcloud cli and authenticate]: https://cloud.google.com/sdk/gcloud  
+1. [install gcloud cli and authenticate]: (https://cloud.google.com/sdk/gcloud)  
 1. build function
    `./gradlew buildFunction`
 1. chose your project you can list it with
