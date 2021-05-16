@@ -3,8 +3,8 @@ Repo for GCP function examples writen in Kotlin.
 List of examples
 | branch | what               |
 |--------|--------------------|
-| master | Always newest one  |
-| basic  | Simple hello world |
+| [master](https://github.com/matios13/GCP-function-kotlin-examples/tree/master) | Always newest one  |
+| [basic](https://github.com/matios13/GCP-function-kotlin-examples/tree/basic)   | Simple hello world |
 
 More comming soon
 
