@@ -55,6 +55,7 @@ task<JavaExec>("runFunction") {
 
 task("buildFunction") {
     dependsOn("build")
+    delete("build/deploy")
     copy {
         from("build/libs/${rootProject.name}-$version-all.jar")
         into("build/deploy")
