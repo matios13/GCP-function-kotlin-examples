@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "4371147b-cd14-48f3-ba4f-15818a4d606e",
+		"name": "Firestore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get document",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}?documentPath=test",
+					"host": [
+						"{{URL}}"
+					],
+					"query": [
+						{
+							"key": "documentPath",
+							"value": "test"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create or update document",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"documentPath\":\"testCollection/test\",\r\n    \"content\":{\r\n        \"name\":\"Mat\",\r\n        \"country\" : \"Poland\",\r\n        \"company\" : \"manka development\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}",
+					"host": [
+						"{{URL}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WONT WORK",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"document\":\"test\",\r\n    \"collection\":\"tesCollection\",\r\n    \"content\":{\r\n        \"name\":\"new document name\",\r\n        \"country\" : \"Poland\",\r\n        \"company\" : \"manka development\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}",
+					"host": [
+						"{{URL}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
